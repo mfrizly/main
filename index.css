@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.cursor {
+  cursor: crosshair;
+}
+
+.animate {
+  animation: animasi 2s ease infinite;
+}
+
+.fadeInOnScroll {
+  animation: fadeIn;
+  animation-timeline: view();
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    scale: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animasi {
+  0% {
+    filter: blur(0);
+  }
+  75% {
+    filter: blur(.1rem);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
+.body {
+  background: linear-gradient(270deg, #61c8ae, #6ca1bf, #7d7d7d);
+  background-size: 600% 600%;
+
+  -webkit-animation: body 20s ease infinite;
+  -moz-animation: body 20s ease infinite;
+  animation: body 20s ease infinite;
+}
+
+@-webkit-keyframes body {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes body {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes body {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.pp-animation {
+  animation: pp 2s ease infinite;
+  margin-bottom: 2px;
+  border-radius: 100%;
+  width: clamp(50px, 5vw, 150px);
+}
+
+
+@keyframes pp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.b-heading {
+  font-family: "Baskervville SC", serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-size: clamp(25px, 6vw, 120px);
+  color: antiquewhite;
+}
+
+.b-body {
+  margin-top: 10px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-size: clamp(5px, 4vw, 40px);
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0px clamp(10px, 10vw, 500px);
+  height: 100vh;
+}
+
+.container-body {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: clamp(10px, 10vw, 500px);
+  margin-left: clamp(10px, 10vw, 500px);
+  height: 100vh;
+}
+
+.glass {
+  padding: 20px;
+}
+
+.f-italic {
+  font-style: italic;
+  color: #7d7d7d;
+}
+
+.f-italic:hover {
+  font-size: clamp(30px, 5vw, 50px);
+  color: brown;
+}
+
+.f-underline {
+  font-style: underline;
+}
+
+.vertical {
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+}
+
+.underline {
+  border-bottom: solid 1px black;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.underline:hover {
+  border-color: brown;
+  border-width: 5px;
+}
+
+
+.marquee {
+  list-style: none;
+  overflow: hidden;
+}
+
+.marquee-inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  animation: marquee 10s linear infinite;
+  
+  li {
+    background-color: rgb(50, 50, 50);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  li:hover {
+    background-color: rgb(19, 125, 0);
+    padding: 10px;
+    color: white;
+  }
+}
+
+
+  
