@@ -202,8 +202,7 @@ a {
 
   li:hover {
     background-color: rgb(19, 125, 0);
-    padding: 10px;
-    color: white;
+    color: black;
   }
 }
 
